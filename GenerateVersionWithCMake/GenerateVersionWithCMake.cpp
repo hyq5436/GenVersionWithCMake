@@ -2,11 +2,14 @@
 //
 
 #include "GenerateVersionWithCMake.h"
+#include <string>
+#include "gitversion.h"
 
 using namespace std;
 
+
 int main()
 {
-	cout << "Hello CMake." << endl;
+	cout << "GIT BUILD VERSION: " << GIT_REVISION << endl;
 	return 0;
 }
