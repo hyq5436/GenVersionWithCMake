@@ -7,7 +7,6 @@
 
 using namespace std;
 
-
 int main()
 {
 	cout << "GIT BUILD VERSION: " << GIT_REVISION << endl;
