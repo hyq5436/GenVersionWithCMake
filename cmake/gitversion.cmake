@@ -11,10 +11,10 @@ if(GIT_EXECUTABLE)
     RESULT_VARIABLE GIT_BUILD_ERROR_CODE
     OUTPUT_STRIP_TRAILING_WHITESPACE
     )
-    message( STATUS "GIT Build No: ${GIT_BUILD_VERSION}")
+    message( STATUS "GIT Build Number: ${GIT_BUILD_VERSION}")
 else()
   set(GIT_BUILD_VERSION 9999)
-  message(STATUS "GIT not found")
+  message(STATUS "GIT not found, and set git build number to 9999")
 endif()
 
 configure_file(${SRC} ${DST} @ONLY)
