@@ -17,5 +17,4 @@ else()
   message(STATUS "GIT not found")
 endif()
 
-
 configure_file(${SRC} ${DST} @ONLY)
