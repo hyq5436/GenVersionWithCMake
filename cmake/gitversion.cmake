@@ -13,6 +13,7 @@ if(GIT_EXECUTABLE)
     )
     message( STATUS "GIT Build No: ${GIT_BUILD_VERSION}")
 else()
+  set(GIT_BUILD_VERSION 9999)
   message(STATUS "GIT not found")
 endif()
 
